@@ -1,11 +1,12 @@
-import {FiLink} from 'react-icons/fi'
+import {FiLink} from 'react-icons/fi';
+import './home.css'
 export default function Home() {
 
   return (
     <div className="container-home" >
       <div className="logo">
         <img src="/logo.png" alt="" />
-        <h1>Sujeito link</h1>
+        <h1>M4lm31d4 link</h1>
         <span>Cole seu link para encurtar 👇</span>
       </div>
 
