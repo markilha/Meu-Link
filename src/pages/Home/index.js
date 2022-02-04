@@ -34,7 +34,7 @@ export default function Home() {
     <div className="container-home" >
       <div className="logo">
         <img src="/logo.png" alt="" height={200} />
-        <h1>M4lm31d4 link</h1>
+        <h1>Markilha link</h1>
         <span>Cole seu link para encurtar 👇</span>
       </div>
 
