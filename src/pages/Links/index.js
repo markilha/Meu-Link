@@ -1,6 +1,9 @@
+
+import { useState,useEffect } from "react";
 import "./links.css";
 import { FiArrowLeft, FiLink, FiTrash } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import {getLinksSave} from '../../services/storelinks'
 
 export default function Links() {
   return (
@@ -21,17 +24,7 @@ export default function Links() {
         <button className="link-delete">
           <FiTrash size={24} color="#FF5454" />
         </button>
-      </div>
-
-      <div className="links-item">
-        <button className="link">
-          <FiLink size={18} color="#FFF" />
-          https://sujeitoprogramador.com
-        </button>
-        <button className="link-delete">
-          <FiTrash size={24} color="#FF5454" />
-        </button>
-      </div>
+      </div>   
 
     </div>
   );
