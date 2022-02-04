@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 import {getLinksSave} from '../../services/storelinks'
 
 export default function Links() {
+
+  useEffect(()=>{
+    
+
+  },[])
+
   return (
     <div className="links-container">
       <div className="links-header">
