@@ -15,9 +15,22 @@ export async function saveLink(key, newLink) {
     console.log("Esse Link já existe na sua lista");
     return;
   }
-  
+
   //Adicionar esse novo link na lista
   linksStored.push(newLink);
   await localStorage.setItem(key, JSON.stringify(linksStored));
   console.log("Link Salvo com sucesso!!!");
+}
+
+//Deletar algum link salvo
+
+export function deleteLink(links, id) {
+
+  let myLinks = links.filter(item => {
+    return (item.id !== id);
+  })
+
+  localStorage.setItem('@encurtaLink', JSON.stringify(myLinks));
+  console.log('Link deletado com sucesso!!!');
+  return myLinks;
 }
